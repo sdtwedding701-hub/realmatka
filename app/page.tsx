@@ -4,7 +4,7 @@ import { useState } from "react";
 
 /** ====== DAILY MANUAL INPUT ====== */
 const MARKETS = [
-  { name: "Sita", digits: ["*", 1, "*"], play: "Morning / Day" },
+  { name: "Sita", digits: ["*", "*", "*"], play: "Morning / Day" },
   { name: "Kamal", digits: ["*", "*", "*"], play: "Morning / Day" },
   { name: "Andhra", digits: ["*", "*", "*"], play: "Morning / Day" },
   { name: "Star Tara", digits: ["*", "*", "*"], play: "Morning / Day" },
@@ -84,7 +84,7 @@ export default function HomePage() {
   const [plan, setPlan] = useState<Row[]>(build3DigitPlan(200, 6));
 
   // === अगर आज कोई prediction नहीं है ===
-  const noPrediction = true; // <- इसे true रखोगे तो message दिखेगा, false करोगे तो नहीं
+  const noPrediction = true;
 
   async function shareSite() {
     const url = typeof window !== "undefined" ? window.location.href : "https://your-site.example";
@@ -103,12 +103,11 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-[#0b0b0f] text-white overflow-x-hidden">
+    <div className="min-h-screen w-full bg-[#0b0b0f] text-white overflow-x-hidden relative">
       {/* soft bg */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-40 -left-40 h-[20rem] w-[20rem] sm:h-[35rem] sm:w-[35rem] rounded-full bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-transparent blur-3xl" />
-<div className="absolute -bottom-40 -right-40 h-[18rem] w-[18rem] sm:h-[30rem] sm:w-[30rem] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/10 to-transparent blur-3xl" />
-
+        <div className="absolute -bottom-40 -right-40 h-[18rem] w-[18rem] sm:h-[30rem] sm:w-[30rem] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/10 to-transparent blur-3xl" />
       </div>
 
       <main className="relative mx-auto max-w-6xl px-4 py-8 sm:py-10">
