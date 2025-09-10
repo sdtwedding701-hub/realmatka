@@ -135,7 +135,7 @@ export default function HomePage() {
               <span aria-hidden>🔐</span>
             </Link>
             <a
-              href="https://wa.me/91XXXXXXXXXX?text=Hi%20Real%20Matka%20Team"
+              href="https://chat.whatsapp.com/B6rOvsK6MMGKa8DBTtvMs8"
               target="_blank"
               rel="noopener noreferrer"
               title="WhatsApp"
