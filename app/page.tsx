@@ -106,8 +106,9 @@ export default function HomePage() {
     <div className="min-h-screen w-full bg-[#0b0b0f] text-white overflow-x-hidden">
       {/* soft bg */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 -left-40 h-[35rem] w-[35rem] rounded-full bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-transparent blur-3xl" />
-        <div className="absolute -bottom-40 -right-40 h-[30rem] w-[30rem] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/10 to-transparent blur-3xl" />
+        <div className="absolute -top-40 -left-40 h-[20rem] w-[20rem] sm:h-[35rem] sm:w-[35rem] rounded-full bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-transparent blur-3xl" />
+<div className="absolute -bottom-40 -right-40 h-[18rem] w-[18rem] sm:h-[30rem] sm:w-[30rem] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/10 to-transparent blur-3xl" />
+
       </div>
 
       <main className="relative mx-auto max-w-6xl px-4 py-8 sm:py-10">
