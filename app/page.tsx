@@ -4,7 +4,7 @@ import { useState } from "react";
 
 /** ====== DAILY MANUAL INPUT ====== */
 const MARKETS = [
-  { name: "Sita", digits: ["*", "*", "*"], play: "Morning / Day" },
+  { name: "Sita", digits: ["*", 1, "*"], play: "Morning / Day" },
   { name: "Kamal", digits: ["*", "*", "*"], play: "Morning / Day" },
   { name: "Andhra", digits: ["*", "*", "*"], play: "Morning / Day" },
   { name: "Star Tara", digits: ["*", "*", "*"], play: "Morning / Day" },
@@ -103,7 +103,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-[100dvh] w-full bg-[#0b0b0f] text-white">
+    <div className="min-h-screen w-full bg-[#0b0b0f] text-white overflow-x-hidden">
       {/* soft bg */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-40 -left-40 h-[35rem] w-[35rem] rounded-full bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-transparent blur-3xl" />
@@ -155,7 +155,7 @@ export default function HomePage() {
 
         {/* ===== Page Headline + Date ===== */}
         <header className="mb-10 text-center px-2">
-          <h1 className="mx-auto max-w-3xl text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight sm:leading-[2] bg-gradient-to-r from-amber-200 via-rose-200 to-orange-300 bg-clip-text text-transparent">
+          <h1 className="mx-auto max-w-3xl text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight sm:leading-[2] bg-gradient-to-r from-amber-200 via-rose-200 to-orange-300 bg-clip-text text-transparent">
             आज की भविष्यवाणियाँ
           </h1>
           <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm">
@@ -165,7 +165,7 @@ export default function HomePage() {
 
           {noPrediction && (
             <p className="mt-4 text-center text-lg font-bold text-red-400">
-            
+              *** आज कोई prediction उपलब्ध नहीं है ***
             </p>
           )}
         </header>
@@ -191,11 +191,11 @@ export default function HomePage() {
               </div>
 
               {/* 3 digits */}
-              <div className="flex justify-center gap-3 mb-4">
+              <div className="flex justify-center gap-2 mb-4 flex-wrap">
                 {m.digits.map((d, i) => (
                   <span
                     key={i}
-                    className="rounded-xl border border-white/20 bg-gradient-to-br from-orange-400/25 via-rose-400/20 to-amber-400/25 px-5 py-3 text-2xl font-extrabold text-amber-100 shadow-[0_8px_24px_-10px_rgba(255,199,120,0.35)]"
+                    className="rounded-xl border border-white/20 bg-gradient-to-br from-orange-400/25 via-rose-400/20 to-amber-400/25 px-4 py-2 text-lg sm:text-2xl font-extrabold text-amber-100 shadow-[0_8px_24px_-10px_rgba(255,199,120,0.35)]"
                   >
                     {d}
                   </span>
@@ -237,7 +237,7 @@ export default function HomePage() {
           </div>
 
           <div className="overflow-x-auto rounded-2xl border border-white/10 bg-[#12131a]">
-            <table className="w-full text-sm">
+            <table className="w-full min-w-[600px] text-sm">
               <thead className="bg-white/[0.06] text-white/80">
                 <tr>
                   <th className="px-3 py-2 text-left font-semibold uppercase text-[11px]">Stage</th>
