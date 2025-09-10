@@ -4,12 +4,12 @@ import { useState } from "react";
 
 /** ====== DAILY MANUAL INPUT ====== */
 const MARKETS = [
-  { name: "Sita", digits: ["*", "*", "*"], play: "Morning / Day" },
-  { name: "Kamal", digits: ["*", "*", "*"], play: "Morning / Day" },
-  { name: "Andhra", digits: ["*", "*", "*"], play: "Morning / Day" },
-  { name: "Star Tara", digits: ["*", "*", "*"], play: "Morning / Day" },
-  { name: "Sridevi", digits: ["*", "*", "*"], play: "Morning / Day" },
-  { name: "Mahadevi", digits: ["*", "*", "*"], play: "Morning / Day" },
+  { name: "Sita", digits: [2, 0, 4], play: "Morning / Day / Night" },
+  { name: "Kamal", digits: [2, 3, 1], play: "Morning / Day / Night" },
+  { name: "Andhra", digits: [9, 7, 2], play: "Morning / Day / Night" },
+  { name: "Star Tara", digits: [0, 1, 5], play: "Morning / Day " },
+  { name: "Sridevi", digits: [4, 7, 2], play: "Day / Night " },
+  { name: "Mahadevi", digits: [8, 9, 7], play: "Morning / Day / Night" },
 ];
 
 /** ====== RELATED TRICKS (links) ====== */
@@ -165,7 +165,7 @@ export default function HomePage() {
 
           {noPrediction && (
             <p className="mt-4 text-center text-lg font-bold text-red-400">
-              *** आज कोई prediction उपलब्ध नहीं है ***
+              *** Abhi daily Update Aayega ***
             </p>
           )}
         </header>
