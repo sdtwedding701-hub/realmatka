@@ -2,8 +2,6 @@
   "name": "realmatka-full-starter",
   "version": "1.0.0",
   "private": true,
-  "description": "Colorful, animated scaffold with a Home page grid, market routes, guides, legal, and tools placeholders.",
-  "main": "postcss.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "cross-env TSC_COMPILE_ON_ERROR=true NEXT_IGNORE_TYPE_ERRORS=true next build",
@@ -11,32 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "csv-parser": "^3.2.0",
-    "framer-motion": "11.3.29",
-    "lucide-react": "0.454.0",
-    "next": "^15.5.2",
-    "papaparse": "^5.5.3",
+    "next": "15.5.2",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-icons": "^5.5.0",
-    "xlsx": "^0.18.5"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@types/node": "20.11.30",
-    "@types/react": "18.2.73",
-    "@types/react-dom": "18.2.23",
     "autoprefixer": "10.4.19",
-    "cross-env": "^10.0.0",
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.2.5",
-    "postcss": "8.4.38",
-    "tailwindcss": "3.4.9",
-    "typescript": "5.5.4"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "cross-env": "7.0.3",
+    "postcss": "8.4.39",
+    "tailwindcss": "3.4.7",
+    "typescript": "5.6.3"
+  }
 }
