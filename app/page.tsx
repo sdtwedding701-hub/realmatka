@@ -290,6 +290,7 @@ export default function HomePage() {
             ))}
           </ul>
         </section>
+        
 
         {/* Footer */}
         <footer className="mt-10 text-center text-xs text-white/60">
