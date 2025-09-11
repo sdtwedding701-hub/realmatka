@@ -4,12 +4,12 @@ import { useState } from "react";
 
 /** ====== DAILY MANUAL INPUT ====== */
 const MARKETS = [
-  { name: "Sita", digits: [2, 0, 4], play: "Morning / Day / Night" },
-  { name: "Kamal", digits: [2, 3, 1], play: "Morning / Day / Night" },
-  { name: "Andhra", digits: [9, 7, 2], play: "Morning / Day / Night" },
-  { name: "Star Tara", digits: [0, 1, 5], play: "Morning / Day " },
-  { name: "Sridevi", digits: [4, 7, 2], play: "Day / Night " },
-  { name: "Mahadevi", digits: [8, 9, 7], play: "Morning / Day / Night" },
+  { name: "Sita", digits: [8, 4, 6], play: "Morning / Day / Night" },
+  { name: "Kamal", digits: [2, 3, 6], play: "Morning / Day / Night" },
+  { name: "Andhra", digits: [2, 7, 9], play: "Morning / Day / Night" },
+  { name: "Star Tara", digits: [0, 4, 9], play: "Morning / Day / Night " },
+  { name: "Sridevi", digits: [7, 4, 9], play: "Day / Night " },
+  { name: "Mahadevi", digits: [0, 9, 8], play: "Morning / Day / Night" },
 ];
 
 /** ====== RELATED TRICKS (links) ====== */
