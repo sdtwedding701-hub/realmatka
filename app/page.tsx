@@ -165,7 +165,7 @@ export default function HomePage() {
 
           {noPrediction && (
             <p className="mt-4 text-center text-lg font-bold text-red-400">
-              *** Abhi daily Update Aayega ***
+              *** up to date ***
             </p>
           )}
         </header>
