@@ -103,13 +103,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-[#0b0b0f] text-white overflow-x-hidden relative">
-      {/* soft bg */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 -left-40 h-[20rem] w-[20rem] sm:h-[35rem] sm:w-[35rem] rounded-full bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-transparent blur-3xl" />
-        <div className="absolute -bottom-40 -right-40 h-[18rem] w-[18rem] sm:h-[30rem] sm:w-[30rem] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/10 to-transparent blur-3xl" />
-      </div>
-
+    <div className="min-h-screen w-full text-white overflow-x-hidden relative">
       <main className="relative mx-auto max-w-6xl px-4 py-8 sm:py-10">
         {/* ===== Top Branding Bar ===== */}
         <div className="mb-8 flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3">
@@ -129,26 +123,26 @@ export default function HomePage() {
           <div className="flex items-center gap-2">
             <Link
               href="/login"
-              title="Login"
+              aria-label="Login"
               className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 hover:border-white/20"
             >
-              <span aria-hidden>🔐</span>
+              🔐
             </Link>
             <a
               href="https://chat.whatsapp.com/B6rOvsK6MMGKa8DBTtvMs8"
               target="_blank"
               rel="noopener noreferrer"
-              title="WhatsApp"
+              aria-label="WhatsApp Group"
               className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 hover:border-white/20"
             >
-              <span aria-hidden>🟢</span>
+              🟢
             </a>
             <button
-              title="Share"
+              aria-label="Share Site"
               onClick={shareSite}
               className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 hover:border-white/20"
             >
-              <span aria-hidden>🔗</span>
+              🔗
             </button>
           </div>
         </div>
@@ -195,7 +189,7 @@ export default function HomePage() {
                 {m.digits.map((d, i) => (
                   <span
                     key={i}
-                    className="rounded-xl border border-white/20 bg-gradient-to-br from-orange-400/25 via-rose-400/20 to-amber-400/25 px-4 py-2 text-lg sm:text-2xl font-extrabold text-amber-100 shadow-[0_8px_24px_-10px_rgba(255,199,120,0.35)]"
+                    className="min-w-[48px] rounded-xl border border-white/20 bg-gradient-to-br from-orange-400/25 via-rose-400/20 to-amber-400/25 px-4 py-2 text-lg sm:text-2xl font-extrabold text-amber-100 shadow-[0_8px_24px_-10px_rgba(255,199,120,0.35)] text-center"
                   >
                     {d}
                   </span>
@@ -290,12 +284,6 @@ export default function HomePage() {
             ))}
           </ul>
         </section>
-        
-
-        {/* Footer */}
-        <footer className="mt-10 text-center text-xs text-white/60">
-          © {new Date().getFullYear()} Real Matka. All Rights Reserved.
-        </footer>
       </main>
     </div>
   );

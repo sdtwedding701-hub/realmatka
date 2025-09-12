@@ -1,4 +1,3 @@
-// components/SeoKeywords.tsx
 import Link from "next/link";
 
 export default function SeoKeywords() {
@@ -17,7 +16,8 @@ export default function SeoKeywords() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
-      <div className="flex flex-wrap justify-center gap-2 text-sm text-gray-300">
+      {/* 🔥 Background overlay black */}
+      <div className="rounded-2xl border border-white/10 bg-black/40 p-5 flex flex-wrap justify-center gap-2 text-sm text-gray-300">
         {KEYWORDS.map((k) => (
           <Link
             key={k.text}
