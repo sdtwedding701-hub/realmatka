@@ -7,9 +7,11 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/trick", label: "Trick" },
+  { href: "/matka-tips", label: "Matka Tips" },   // ✅ नया link
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact Us" },
 ];
+
 
 export default function Header() {
   const pathname = usePathname();

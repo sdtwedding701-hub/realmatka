@@ -4,12 +4,12 @@ import { useState } from "react";
 
 /** ====== DAILY MANUAL INPUT ====== */
 const MARKETS = [
-  { name: "Sita", digits: [8, 4, 6], play: "Morning / Day / Night" },
-  { name: "Kamal", digits: [2, 3, 6], play: "Morning / Day / Night" },
-  { name: "Andhra", digits: [2, 7, 9], play: "Morning / Day / Night" },
+  { name: "Sita", digits: [3, 8, 4], play: "Morning / Day / Night" },
+  { name: "Kamal", digits: [2, 4, 7], play: "Morning / Day / Night" },
+  { name: "Andhra", digits: [4, 0, 9], play: "Morning / Day / Night" },
   { name: "Star Tara", digits: [0, 4, 9], play: "Morning / Day / Night " },
-  { name: "Sridevi", digits: [7, 4, 9], play: "Day / Night " },
-  { name: "Mahadevi", digits: [0, 9, 8], play: "Morning / Day / Night" },
+  { name: "Sridevi", digits: [5, 7, 9], play: "Day / Night " },
+  { name: "Mahadevi", digits: [0, 1, 2], play: "Morning / Day / Night" },
 ];
 
 /** ====== RELATED TRICKS (links) ====== */
@@ -159,7 +159,7 @@ export default function HomePage() {
 
           {noPrediction && (
             <p className="mt-4 text-center text-lg font-bold text-red-400">
-              *** up to date ***
+              *** Data Update ***
             </p>
           )}
         </header>
